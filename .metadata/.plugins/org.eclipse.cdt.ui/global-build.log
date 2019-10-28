@@ -1,0 +1,996 @@
+11:06:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:06:23 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:06:24 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:06:29 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/GPIO.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -MT"src/GPIO.d" -o "src/GPIO.o" "../src/GPIO.c"
+Finished building: ../src/GPIO.c
+ 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0Init':
+../src/Teclado.c:87:18: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  Chip_TIMER_Init(LPC_TIMER16_0);
+                  ^
+../src/Teclado.c:87:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/Teclado.c:96:23: error: 'TIMER_16_0_IRQn' undeclared (first use in this function)
+  NVIC_ClearPendingIRQ(TIMER_16_0_IRQn);
+                       ^
+../src/Teclado.c: In function 'Teclado_Tim0DeInit':
+../src/Teclado.c:104:21: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  Chip_TIMER_Disable(LPC_TIMER16_0);
+                     ^
+../src/Teclado.c:105:18: error: 'TIMER_16_0_IRQn' undeclared (first use in this function)
+  NVIC_DisableIRQ(TIMER_16_0_IRQn);
+                  ^
+../src/Teclado.c: In function 'TIMER16_0_IRQHandler':
+../src/Teclado.c:148:30: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  if (Chip_TIMER_MatchPending(LPC_TIMER16_0, 0)) {
+                              ^
+../src/Teclado.c: At top level:
+../src/Teclado.c:103:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+11:34:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:34:03 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:34:03 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:34:05 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0DeInit':
+../src/Teclado.c:114:21: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  Chip_TIMER_Disable(LPC_TIMER16_0);
+                     ^
+../src/Teclado.c:114:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/Teclado.c:115:18: error: 'TIMER_16_0_IRQn' undeclared (first use in this function)
+  NVIC_DisableIRQ(TIMER_16_0_IRQn);
+                  ^
+../src/Teclado.c: In function 'TIMER16_0_IRQHandler':
+../src/Teclado.c:158:30: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  if (Chip_TIMER_MatchPending(LPC_TIMER16_0, 0)) {
+                              ^
+../src/Teclado.c: At top level:
+../src/Teclado.c:88:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:113:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+11:37:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:37:21 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:37:22 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:37:24 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'TIMER16_0_IRQHandler':
+../src/Teclado.c:165:30: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  if (Chip_TIMER_MatchPending(LPC_TIMER16_0, 0)) {
+                              ^
+../src/Teclado.c:165:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/Teclado.c: At top level:
+../src/Teclado.c:115:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:88:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:113:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+11:41:01 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:41:02 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:41:02 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:41:05 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:216:39: error: expected ')' before numeric constant
+  Chip_TIMER_ClearMatch(LPC_TIMER16_0, 0);
+                                       ^
+../src/Teclado.c:217:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+../src/Teclado.c:164:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:115:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:88:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:113:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+11:44:18 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:44:18 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:44:18 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:44:21 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_TIMER_IRQHandler':
+../src/Teclado.c:218:24: error: 'LPC_TIMER16_0' undeclared (first use in this function)
+  Chip_TIMER_ClearMatch(LPC_TIMER16_0, 0);
+                        ^
+../src/Teclado.c:218:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/Teclado.c: At top level:
+../src/Teclado.c:164:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:115:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:88:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:113:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+11:45:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:45:03 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:45:03 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:45:05 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:219:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:164:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:115:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:88:0: error: unterminated #else
+ #ifdef BOARD_NXP_XPRESSO_11C24
+ ^
+../src/Teclado.c:113:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+11:48:49 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:48:50 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:48:50 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:48:52 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:113:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  29480	      0	   2044	  31524	   7b24	Main.axf
+ 
+12:01:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:01:21 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:01:21 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:01:24 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+Finished building: ../src/Main.c
+ 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0Init':
+../src/Teclado.c:118:51: error: 'TICKRATE_HZ1' undeclared (first use in this function)
+   Chip_TIMER_SetMatch(LPC_TIMER0, 1, (timerFreq / TICKRATE_HZ1));
+                                                   ^
+../src/Teclado.c:118:51: note: each undeclared identifier is reported only once for each function it appears in
+../src/Teclado.c: At top level:
+../src/Teclado.c:132:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+make: *** [src/Teclado.o] Error 1
+12:02:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:02:02 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:02:02 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:02:05 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:52:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (11) /* 11 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:132:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  31656	      0	   2068	  33724	   83bc	Main.axf
+ 
+12:02:19 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:02:20 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:02:20 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:02:22 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+make: Nothing to be done for `all'.
+12:08:58 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:08:59 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:08:59 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:09:02 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (10) /* 11 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:132:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  31656	      0	   2068	  33724	   83bc	Main.axf
+ 
+12:12:32 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:12:33 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:12:33 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:12:35 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+make: Nothing to be done for `all'.
+12:17:14 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:17:15 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:17:15 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:17:18 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:132:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  31656	      0	   2068	  33724	   83bc	Main.axf
+ 
+12:24:39 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:24:39 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:24:40 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:24:42 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+make: Nothing to be done for `all'.
+12:35:24 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:35:24 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:35:25 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+Building file: ../src/LCD.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/LCD.d" -MT"src/LCD.o" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+Finished building: ../src/LCD.c
+ 
+Building target: liblib_ModuloSim908.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblib_ModuloSim908.a"  ./src/LCD.o ./src/LED.o ./src/Pulsador.o ./src/RTC.o ./src/UART.o   
+c:\nxp\LPCXpresso_7.9.0_455\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblib_ModuloSim908.a
+Finished building target: liblib_ModuloSim908.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblib_ModuloSim908.a" ; # arm-none-eabi-objdump -h -S "liblib_ModuloSim908.a" >"liblib_ModuloSim908.lss"
+   text	   data	    bss	    dec	    hex	filename
+   2241	      0	      4	   2245	    8c5	LCD.o (ex liblib_ModuloSim908.a)
+    464	      4	      4	    472	    1d8	LED.o (ex liblib_ModuloSim908.a)
+     92	      0	      0	     92	     5c	Pulsador.o (ex liblib_ModuloSim908.a)
+   1070	      0	      4	   1074	    432	RTC.o (ex liblib_ModuloSim908.a)
+    775	      0	    160	    935	    3a7	UART.o (ex liblib_ModuloSim908.a)
+ 
+12:35:28 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c:132:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  31648	      0	   2068	  33716	   83b4	Main.axf
+ 
+12:43:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:43:22 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:43:22 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+Building file: ../src/LCD.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/LCD.d" -MT"src/LCD.o" -MT"src/LCD.d" -o "src/LCD.o" "../src/LCD.c"
+Finished building: ../src/LCD.c
+ 
+Building target: liblib_ModuloSim908.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblib_ModuloSim908.a"  ./src/LCD.o ./src/LED.o ./src/Pulsador.o ./src/RTC.o ./src/UART.o   
+c:\nxp\LPCXpresso_7.9.0_455\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblib_ModuloSim908.a
+Finished building target: liblib_ModuloSim908.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblib_ModuloSim908.a" ; # arm-none-eabi-objdump -h -S "liblib_ModuloSim908.a" >"liblib_ModuloSim908.lss"
+   text	   data	    bss	    dec	    hex	filename
+   2237	      0	      4	   2241	    8c1	LCD.o (ex liblib_ModuloSim908.a)
+    464	      4	      4	    472	    1d8	LED.o (ex liblib_ModuloSim908.a)
+     92	      0	      0	     92	     5c	Pulsador.o (ex liblib_ModuloSim908.a)
+   1070	      0	      4	   1074	    432	RTC.o (ex liblib_ModuloSim908.a)
+    775	      0	    160	    935	    3a7	UART.o (ex liblib_ModuloSim908.a)
+ 
+12:43:25 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0Init':
+../src/Teclado.c:107:11: warning: variable 'timerFreq' set but not used [-Wunused-but-set-variable]
+  uint32_t timerFreq;
+           ^
+../src/Teclado.c: At top level:
+../src/Teclado.c:135:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  31704	      0	   2068	  33772	   83ec	Main.axf
+ 
+12:47:37 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:47:37 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:47:37 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:47:40 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+make: Nothing to be done for `all'.
+12:50:05 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:50:05 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+12:50:06 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:50:08 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30936	      0	   2068	  33004	   80ec	Main.axf
+ 
+14:30:36 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:30:36 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+14:30:37 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:30:39 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30880	      0	   2060	  32940	   80ac	Main.axf
+ 
+14:34:01 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:34:02 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+14:34:02 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:34:04 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30920	      0	   2060	  32980	   80d4	Main.axf
+ 
+14:42:22 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:42:22 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+14:42:22 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:42:25 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30920	      0	   2060	  32980	   80d4	Main.axf
+ 
+14:42:57 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:42:57 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+14:42:57 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+14:43:00 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0Init':
+../src/Teclado.c:107:11: warning: variable 'timerFreq' set but not used [-Wunused-but-set-variable]
+  uint32_t timerFreq;
+           ^
+../src/Teclado.c: At top level:
+../src/Teclado.c:86:13: warning: 'Teclado_Tim0Init' defined but not used [-Wunused-function]
+ static void Teclado_Tim0Init(void) {
+             ^
+../src/Teclado.c:135:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30488	      0	   2060	  32548	   7f24	Main.axf
+ 
+15:15:18 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:15:19 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+15:15:19 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:15:21 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0Init':
+../src/Teclado.c:107:11: warning: variable 'timerFreq' set but not used [-Wunused-but-set-variable]
+  uint32_t timerFreq;
+           ^
+../src/Teclado.c: At top level:
+../src/Teclado.c:86:13: warning: 'Teclado_Tim0Init' defined but not used [-Wunused-function]
+ static void Teclado_Tim0Init(void) {
+             ^
+../src/Teclado.c:135:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30488	      0	   2060	  32548	   7f24	Main.axf
+ 
+15:16:31 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:16:31 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+15:16:32 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:16:34 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  30488	      0	   2060	  32548	   7f24	Main.axf
+ 
+15:16:59 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:16:59 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+15:17:00 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:17:02 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -MT"src/Main.d" -o "src/Main.o" "../src/Main.c"
+../src/Main.c:144:0: warning: "TICKRATE_HZ1" redefined
+ #define TICKRATE_HZ1 (1000) /* 10 ticks per second */
+ ^
+In file included from ../src/Main.c:138:0:
+../src/Teclado.h:53:0: note: this is the location of the previous definition
+ #define TICKRATE_HZ1 (120) /* 1 ticks per second */
+ ^
+Finished building: ../src/Main.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  22464	      0	    724	  23188	   5a94	Main.axf
+ 
+15:19:25 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:19:26 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+15:19:26 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:19:28 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/Teclado.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/Teclado.d" -MT"src/Teclado.o" -MT"src/Teclado.d" -o "src/Teclado.o" "../src/Teclado.c"
+../src/Teclado.c: In function 'Teclado_Tim0Init':
+../src/Teclado.c:107:11: warning: variable 'timerFreq' set but not used [-Wunused-but-set-variable]
+  uint32_t timerFreq;
+           ^
+../src/Teclado.c: At top level:
+../src/Teclado.c:135:13: warning: 'Teclado_Tim0DeInit' defined but not used [-Wunused-function]
+ static void Teclado_Tim0DeInit(void) {
+             ^
+Finished building: ../src/Teclado.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  22888	      0	    724	  23612	   5c3c	Main.axf
+ 
+15:22:04 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:22:04 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+15:22:05 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:22:07 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+make: Nothing to be done for `all'.
+15:51:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:51:21 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+15:51:22 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+15:51:24 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/GPIO.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -MT"src/GPIO.d" -o "src/GPIO.o" "../src/GPIO.c"
+In file included from G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip.h:139:0,
+                 from ../src/GPIO.c:9:
+../src/GPIO.c: In function 'PIN_INIT':
+G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip_lpc175x_6x.h:111:35: warning: passing argument 1 of 'Chip_IOCON_PinMuxSet' from incompatible pointer type
+ #define LPC_GPIO                  ((LPC_GPIO_T             *) LPC_GPIO0_BASE)
+                                   ^
+../src/GPIO.c:305:23: note: in expansion of macro 'LPC_GPIO'
+  Chip_IOCON_PinMuxSet(LPC_GPIO, port, bit, IOCON_FUNC0);
+                       ^
+In file included from G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip_lpc175x_6x.h:156:0,
+                 from G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip.h:139,
+                 from ../src/GPIO.c:9:
+G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/iocon_17xx_40xx.h:170:6: note: expected 'struct LPC_IOCON_T *' but argument is of type 'struct LPC_GPIO_T *'
+ void Chip_IOCON_PinMuxSet(LPC_IOCON_T *pIOCON, uint8_t port, uint8_t pin, uint32_t modefunc);
+      ^
+Finished building: ../src/GPIO.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  22912	      0	    724	  23636	   5c54	Main.axf
+ 
+16:00:25 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+16:00:26 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+16:00:26 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+16:00:28 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/GPIO.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -MT"src/GPIO.d" -o "src/GPIO.o" "../src/GPIO.c"
+In file included from G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip.h:139:0,
+                 from ../src/GPIO.c:9:
+../src/GPIO.c: In function 'PIN_INIT':
+G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip_lpc175x_6x.h:111:35: warning: passing argument 1 of 'Chip_IOCON_PinMux' from incompatible pointer type
+ #define LPC_GPIO                  ((LPC_GPIO_T             *) LPC_GPIO0_BASE)
+                                   ^
+../src/GPIO.c:305:20: note: in expansion of macro 'LPC_GPIO'
+  Chip_IOCON_PinMux(LPC_GPIO, port, bit,IOCON_MODE_PULLUP, IOCON_FUNC0);
+                    ^
+In file included from G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip_lpc175x_6x.h:156:0,
+                 from G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/chip.h:139,
+                 from ../src/GPIO.c:9:
+G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc/iocon_17xx_40xx.h:181:6: note: expected 'struct LPC_IOCON_T *' but argument is of type 'struct LPC_GPIO_T *'
+ void Chip_IOCON_PinMux(LPC_IOCON_T *pIOCON, uint8_t port, uint8_t pin, uint32_t mode, uint8_t func);
+      ^
+Finished building: ../src/GPIO.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  22912	      0	    724	  23636	   5c54	Main.axf
+ 
+16:04:59 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+16:05:00 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+16:05:00 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+16:05:02 **** Incremental Build of configuration Debug for project Main ****
+make -r all 
+Building file: ../src/GPIO.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\inc" -I"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -MT"src/GPIO.d" -o "src/GPIO.o" "../src/GPIO.c"
+Finished building: ../src/GPIO.c
+ 
+Building target: Main.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lib_ModuloSim908\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_board_nxp_lpcxpresso_1769\Debug" -L"G:\TD2_UNLaM - Repositorio\Programas\2016\Demo1769_20161024\lpc_chip_175x_6x\Debug" -Xlinker -Map="Main.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "Main_Debug.ld" -o "Main.axf"  ./src/GPIO.o ./src/Main.o ./src/Sim908.o ./src/Teclado.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llib_ModuloSim908 -llpc_chip_175x_6x
+Finished building target: Main.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Main.axf"; # arm-none-eabi-objcopy -v -O binary "Main.axf" "Main.bin" ; # checksum -p LPC1769 -d "Main.bin";
+   text	   data	    bss	    dec	    hex	filename
+  22888	      0	    724	  23612	   5c3c	Main.axf
+ 

@@ -1,0 +1,6 @@
+16:05:00 **** Incremental Build of configuration Debug for project lib_ModuloSim908 ****
+make -r all 
+make: Nothing to be done for `all'.
+
+16:05:00 Build Finished (took 80ms)
+
